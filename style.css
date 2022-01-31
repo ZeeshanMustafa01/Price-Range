@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  font-size: 62.5%;
+  background-image: linear-gradient(to right bottom, orange, orangered);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  padding: 4rem 3rem;
+  border-radius: 1rem;
+  background-color: #fff;
+}
+
+.price-inputs {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-items: center;
+
+  margin-bottom: 3rem;
+}
+
+.price-inputs label {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+.price-input {
+  width: 8rem;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+/* min-max arrows hide */
+.price-input::-webkit-outer-spin-button,
+.price-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* progress Bar */
+.slider {
+  position: relative;
+}
+.slider .progress {
+  left: 0;
+  right: 0;
+  position: absolute;
+  height: 5px;
+  border-radius: 5rem;
+  background: rgb(14, 14, 202);
+}
+
+/* input range */
+.input-range {
+  position: relative;
+}
+
+/* range input */
+.input-range input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* circle */
+.range::-webkit-slider-thumb {
+  cursor: pointer;
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 50%;
+  background: rgb(14, 14, 202);
+  pointer-events: auto;
+  -webkit-appearance: none;
+}
+input[type="range"]::-moz-range-thumb {
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 50%;
+  background: rgb(14, 14, 202);
+  pointer-events: auto;
+  -webkit-appearance: none;
+}
